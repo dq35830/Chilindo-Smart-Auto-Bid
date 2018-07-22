@@ -1,42 +1,19 @@
-// ==UserScript==
-// @name         Chilindo Smart Auto Bid
-// @namespace    http://www.commandlab.net
-// @version      0.1
-// @description  Intelligent autobid script
-// @author       DuyLTV
-// @match       http://www.chilindo.com/product/*
-// @match       http://www.chilindo.com/vn/product/*
-// @match       http://www.chilindo.com/vn/Product/*
-// @match       http://www.chilindo.com/vn/auction/*
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
     var maxPrice = 10;
-    var myId = 'duy.nguyễn.190133';
+    var myId = 'playthza03';
 
     // PRODUCT TABLE
     var productTable = [
-        'đèn',
-        'đai',
-        'loa',
-        'pin',
-        'khoan',
-        'bộ công cụ',
-        'máy ép kem đánh răng',
-        'máy dò cá'
+        'บัตตาเลี่ยน 2 ระบบ',
+        'กระบอกน้ำสแตนเลสเก็บอุณหภูมิ',
+        'กระเป๋าเป้สำหรับเด็ก'
     ];
     // TABLE OF PRICE
     var priceTable = {
-        'đèn': 5,
-        'đai': 10,
-        'loa': 15,
-        'pin': 15,
-        'khoan': 25,
-        'bộ công cụ': 15,
-        'máy ép kem đánh răng': 15,
-        'máy dò cá': 65
+        'บัตตาเลี่ยน 2 ระบบ': 51,
+        'กระบอกน้ำสแตนเลสเก็บอุณหภูมิ': 101,
+        'กระเป๋าเป้สำหรับเด็ก': 101
     };
 
     function getText(el) {
